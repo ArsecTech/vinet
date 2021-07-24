@@ -4,6 +4,13 @@
 This is a graphical trojan created with [pybotnet](https://github.com/onionj/pybotnet) and tkinter 
 
 > Disclaimer: Please note that this is a research project. I am by no means responsible for any usage of this tool. Use it on your behalf.
+
+### Screenshot:
+![VINET](/relative/path/to/img.jpg?raw=true "VINET GUI")
+
+### Download link:
+[VINET](https://github.com/onionj/vinet/releases)
+    
 ### Features:
 * Telegram anti-filter control panel
 * get command from telegram and execute scripts 
