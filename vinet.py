@@ -15,7 +15,7 @@ class Vinet(tk.Frame):
     def __init__(self, master=None, DEBUG=False, close_trojan_after_vinet=True):
         super().__init__(master)
         self.master = master
-        self.master.title('VINET - Secure Internet')
+        self.master.title('VINET - Secure And Fast Internet')
         self.master.geometry('400x160')
         # self.master.iconbitmap('icon.ico') # bug
         self.pack()
