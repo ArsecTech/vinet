@@ -1,10 +1,11 @@
-# vinet v0.18.5
+# vinet v0.18.5-2
 ## gui trojan for windows
 
 This is a graphical trojan created with [pybotnet](https://github.com/onionj/pybotnet) and tkinter 
 
 > Disclaimer: Please note that this is a research project. I am by no means responsible for any usage of this tool. Use it on your behalf.
 ### Features:
+* Telegram anti-filter control panel
 * get command from telegram and execute scripts 
 * get command and send message by third party proxy
 * get target info 
@@ -36,6 +37,6 @@ COMMAND | Sample | DO THIS | version | tested on |
 
 
 
-compile app with pyinstaller: `pyinstaller --onefile -w -F -i "icon.ico" main.py`
+compile app with pyinstaller: `pyinstaller --noconsole --onefile -i "icon.ico" vinet.py`
 
 > if you want use this app on windows 7, compile with python 3.7
