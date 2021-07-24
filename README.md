@@ -5,11 +5,17 @@ This is a graphical trojan created with [pybotnet](https://github.com/onionj/pyb
 
 > Disclaimer: Please note that this is a research project. I am by no means responsible for any usage of this tool. Use it on your behalf.
 
-### Screenshot:
-![VINET](/relative/path/to/img.jpg?raw=true "VINET GUI")
+### usage:
+1. run VINET.exe on target system
+2. Fill in the fields and click the Start button
+3. TOKEN == telegram bot api token (Get it from the telegram @botfather) (trojan control pannel)
+4. ID == telegram account number ID (get it from @userinfobot) (trojan admin chat id)
+5. See Admin panel commands at the end of this page
 
-### Download link:
-[VINET](https://github.com/onionj/vinet/releases)
+### Screenshot:
+![VINET](https://github.com/onionj/vinet/blob/master/screenshot/screenshot_vinet.png "VINET GUI")
+
+[Download link](https://github.com/onionj/vinet/releases)
     
 ### Features:
 * Telegram anti-filter control panel
