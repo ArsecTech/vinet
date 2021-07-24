@@ -1,0 +1,2 @@
+pybotnet==0.18.5
+pyinstaller==4.4
