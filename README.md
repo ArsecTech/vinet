@@ -1,4 +1,4 @@
-# vinet v0.18.5-2
+# vinet v0.18.6
 ## gui trojan for windows
 
 This is a graphical trojan created with [pybotnet](https://github.com/onionj/pybotnet) and tkinter 
